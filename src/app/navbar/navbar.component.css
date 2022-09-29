@@ -1,0 +1,7 @@
+input[type=submit]{
+    width:180px;
+    height: 45px;
+    font-size: 19px;
+    background-color: #383837;
+    color:white;
+}

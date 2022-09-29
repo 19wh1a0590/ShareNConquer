@@ -1,0 +1,52 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<div class="container">
+    <div class="modal fade" id="userModel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" data-dismiss="modal">&times;</span>
+                    <h4 class="modal-title">Update Form</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group">
+                        <!-- Enter Id: <input type="number" name="_id" [(ngModel)]="editObject._id"
+                            class="form-control"><br /> -->
+                        Enter Name: <input type="text" name="username" [(ngModel)]="editObject.username"
+                            class="form-control"><br />
+                        Enter Email: <input type="text" name="email" [(ngModel)]="editObject.email"
+                            class="form-control"><br />
+                        Enter Password: <input type="text" name="password" [(ngModel)]="editObject.password"
+                            class="form-control"><br />
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-sm" (click)="updateUser()" data-dismiss="modal">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-striped table-hover table-sm">
+    <thead class = "thead-dark">
+    <tr class="bg-info text-white">
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th colspan=2>Actions</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let u of user" >
+        <td>{{ u._id }}</td>
+        <td>{{ u.username}}</td>
+        <td>{{ u.email}}</td>
+        <td><button (click)="deleteUser(u)" class="glyphicon glyphicon-trash"></button></td>
+        <td><button (click)="showEditPopup(u)" class="glyphicon glyphicon-pencil"></button></td>
+</tr>
+</tbody>
+</table>
+</div>

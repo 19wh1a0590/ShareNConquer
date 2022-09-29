@@ -1,0 +1,60 @@
+<app-navbar></app-navbar>
+<!-- <h1><b style="font-size: 25px;">Computer programming</b></h1>
+<p style="font-size: 20px;"> This group discusses advance topics of java which are mostly used in competitive coding</p>
+<a href="https://t.me/+Bs3tGo0d_CUwNDU1" class="btn btn-primary" role="button" data-bs-toggle="button" style="font-size:15px">Join Group!</a> -->
+<div class="row">
+<div class="card">
+<!-- <h1 class="text-center bg-success "style="font-size: 25px;color: white;">Discover clubs👀🔎 </h1> -->
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <form [formGroup]="exform" >
+                    <div class="form-group">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label  style="font-size:23px ; color: white;">Select Topic:</label>
+                    <select  size="4" formControlName="topic" class="form-control" >
+                        <option value="ScienceAndTechnology" style="font-size: large;color:black;"><strong>Science and Technology (Think Like a Proton…Always Positive) </strong></option>
+                        <option value="ComputerProgramming"style="font-size: large;  color:black;">Computer Programming (Code is like humor. When you have to explain it, it’s bad)</option>
+                        <option value="HealthAndFitness"style="font-size: large; color:black;">Health and fitness  (Before your body, your mind comes to the gym)</option>
+                        <option value="BusinessAndEntreprenuership"style="font-size: large;  color: black;">Business and Entreprenuership  (Winners never quit and quitters never win) </option>
+                  </select>
+                      </div>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                       <button (click)="discover()" [disabled]="exform.invalid" type="button" class="btn btn-dark" style="font-size: 20px; color: white">Submit</button>
+                      </form>
+                      <br>
+    <!-- <table class="table table-bordered ">
+    <thead class = "thead-dark">
+    <tr class="bg-info text-white">
+        <th scope="col"style="font-size:19px;">Topic</th>
+        <th scope="col" style="font-size:19px;">Group Name</th>
+        <th scope="col" style="font-size:19px;">url</th> -->
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col"style="font-size:19px;">Topic</th>
+                <th scope="col"style="font-size:19px;">GroupName</th>
+                <th scope="col"style="font-size:19px;">URL</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let u of topicObj" >
+        <td><h4>{{ u.topic }}</h4></td>
+        <td><h4>{{ u.GroupName}}</h4></td>
+        <td >
+        <a href="{{ u.link}}" class="btn btn-dark" role="button" data-bs-toggle="button" style="font-size: small; color: white;">Join club</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+

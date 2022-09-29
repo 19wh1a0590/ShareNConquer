@@ -1,0 +1,36 @@
+.card{
+    /* width:500px;
+    margin-left: 290px;
+    align-items: center;
+    height: 505px;
+    margin-top: 10px;
+    background-color: lightsalmon; */
+
+    margin-right: 120px;
+    margin-left: 290px;
+    margin-top: 10px;
+    width: 500px;
+    box-shadow: 0 15px 25px rgba(27, 25, 24, 0.781);
+    height: 505px;
+    align-items: center;
+    border-radius: 5px;
+    backdrop-filter: blur(11px);
+    background-color: rgba(179, 251, 11, 0);
+    /* padding: 10px; */
+    /* text-align: center; */
+    
+    
+}
+/* h2{
+    margin-left:77px;
+}*/
+ h3{
+    margin-left: 55px;
+    margin-top: 32px;
+} 
+
+.row{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKffIE3ndytB3l3Vbt8ZN7ivdG29ag5-ge0w&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: 1400px 700px;
+}

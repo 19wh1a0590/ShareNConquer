@@ -1,0 +1,64 @@
+.form-group{
+    width:745px;
+    background-color: black;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form-control{
+font-size: 19px;
+height: auto;
+background-color: white;
+align-items: center;
+} 
+select option{
+    font-size: 20px;
+    height: 25px;
+  }
+ select {
+    height: 200px;
+    color: red;
+}
+
+option {
+    color: green;
+}
+
+.table table-bordered{
+    width: 50px;
+}
+
+table, th, td {
+    border: 1px solid;
+    
+  }
+
+  table{
+      width: 850px;
+       margin-left: auto;
+  margin-right: auto;
+  /* align-items: center; */
+  text-align: center;
+  }
+
+  td{
+      text-align:center;
+  }
+
+  input[type="button"]{
+      margin-left: auto;
+      margin-left: auto;
+  }
+
+  .card{
+      width:800px;
+      height:500px;
+      margin-left: 310px;
+      background-color: wheat;
+  }
+
+  .row{
+      background-image: url("https://img.freepik.com/free-vector/video-conference-chatting-online-meeting-diverse-people-distance-web-communication-friends-video-call-team-business-call-from-home-vector-illustration_71609-2216.jpg?size=626&ext=jpg");
+  
+    }

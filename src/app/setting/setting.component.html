@@ -1,0 +1,98 @@
+<div class="row">
+<app-navbar></app-navbar>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<div class="container">
+    <div class="modal fade" id="userModel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" data-dismiss="modal">&times;</span>
+                    <h4 class="modal-title">Update Form</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group">
+                        <!-- Enter Id: <input type="number" name="_id" [(ngModel)]="editObject._id"
+                            class="form-control"><br /> -->
+                        Enter Name: <input type="text" name="username" [(ngModel)]="editObject.username"
+                            class="form-control"><br />
+                        Enter Email: <input type="text" name="email" [(ngModel)]="editObject.email"
+                            class="form-control"><br />
+                        Enter Password: <input type="text" name="password" [(ngModel)]="editObject.password"
+                            class="form-control"><br />
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-sm" (click)="updateUser()" data-dismiss="modal">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <table class="table table-bordered table-striped table-hover table-sm">
+    <thead class = "thead-dark">
+    <tr class="bg-info text-white">
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        
+        <th scope="col">Password</th>
+        <th scope="col">Delete account</th>
+
+        <th scope="col">  Update user details</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let us of user2" >
+        <td>{{ us.username}}</td>
+        <td>{{ us.email}}</td>
+        <td>{{ us.password}}</td>
+        <td><button (click)="deleteUser(us)" class="glyphicon glyphicon-trash"></button></td>
+        <td><button (click)="showEditPopup(us)" class="glyphicon glyphicon-pencil"></button></td>
+</tr>
+</tbody>
+</table> -->
+<div class="card">
+    <div class="text  mt-5">
+      <div class="col-md-12">
+        <div class="l">
+            
+                  <h4 class="text" style="font-size: 39px;color: black; margin-left: 20px;"><strong>Settings</strong></h4>             
+               </div>
+               
+               &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;
+           
+            <tr *ngFor="let us of user2" >
+
+                  <label class="labels" style="font-size: 23px; color: black; margin-left: 40px;">Username</label>
+                  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp; <h4 style="font-size: 25px; margin-left: 58px;">{{us.username}}</h4>
+                  <!-- <div class="col-md-12"><label class="labels">Username</label><input type="text"
+                     class="form-control" placeholder="education" value="{{user1.username}}"></div> -->
+                 <br>
+                 
+              
+                    <label class="labels" style="font-size: 20px; color:black; margin-left: 49px;">Email ID</label>
+                    <h4 style="font-size: 25px; ">{{us.email}}</h4>
+                   
+                  <br>
+                  
+                  <label class="labels" style="font-size: 20px; color:black; margin-left: 49px;">Password</label>
+                  <h4 style="font-size: 50px; margin-left: 60px; " >****</h4>
+                  
+                
+                 
+               <h3>
+                  <button (click)="showEditPopup(us)" class="glyphicon glyphicon-pencil"></button>
+
+                 &nbsp;
+                   <button (click)="deleteUser(us)" class="glyphicon glyphicon-trash" ></button>
+                 </h3>
+                  </div>
+    </div>
+</div>
+</div>

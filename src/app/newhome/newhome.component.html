@@ -1,0 +1,99 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 20px; " style="font-size:xx-large; color: peachpuff;"><strong>SNC</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/"  style="font-size: 19px;">Home</a>
+          </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/login" style="font-size: 19px; color: white;">Login</a>
+          </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/register"  style="font-size: 19px; color: white;">Register</a>
+          </li>
+         
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  
+<h3>
+
+<p *ngFor="let alert of alerts">
+    <ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
+</p>
+</h3>
+
+
+<div class="card-group">
+    <div class="card">
+      <img src="https://source.unsplash.com/900x900/?meeting,coding" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="font-size :large">Discover Clubs</h5>
+        <p class="card-text" style="font-size :large">Here you can discover and explore new clubs.</p>
+        <p class="card-text"><small class="text-muted" style="font-size :10px">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/900x900/?meeting" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"style="font-size :large">Create Clubs</h5>
+        <p class="card-text" style="font-size :large">Here you can create your own clubs and share youe knowledge.</p>
+        <p class="card-text"><small class="text-muted" style="font-size :10px">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/900x900/?programming" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="font-size :large">See your clubs</h5>
+        <p class="card-text"style="font-size :large">Here you can find your clubs.</p>
+        <p class="card-text"><small class="text-muted"style="font-size :10px">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+        <img src="https://source.unsplash.com/900x900/?knowledge" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"style="font-size :large">Meet, Join, Explore, Learn</h5>
+          <p class="card-text"style="font-size :large">Meet new people, join new clubs, explore new skills, learn new technolgy</p>
+          <p class="card-text"><small class="text-muted"style="font-size :10px">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+  </div>
+<!-- 
+<div class="col">
+    <div class="card">
+      <img src="https://source.unsplash.com/900x900/?two%20people,coding" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">See your one to ones</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+<div class="col">
+  <div class="card">
+    <img src="https://source.unsplash.com/900x900/?group meeting,programming" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">See Your Groups</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card">
+    <img src="https://source.unsplash.com/900x900/?two%20people,programming" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Discover one to ones</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+    </div>
+  </div>
+</div> -->

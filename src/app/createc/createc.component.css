@@ -1,0 +1,40 @@
+/* .form-control.ng-touched.ng-invalid {
+  border:1px solid red;
+ }
+ .form-control.ng-touched.ng-valid {
+  border:1px solid green;
+ } */
+ 
+     input[type=submit]{
+       color: peachpuff;
+     }
+   
+     img.avatar {
+       /* bottom: 100px; */
+        width: 10px
+     }
+   
+   .form-control{
+     font-size: 13px;
+   }
+   .card {
+     padding: 50px 30px;
+     /* margin-top: 60px; */
+   
+     /* margin-bottom: 100px 100px; */
+     width:400px;
+     border: none !important;
+     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+     background-color: white;
+     margin-left: 410px; /* Added */
+     float: none; /* Added */
+     margin-top: -70px; /* Added */
+     border-color: black;
+    
+   }
+   
+
+   .row{
+    background-image: url("https://img.freepik.com/free-vector/video-conference-chatting-online-meeting-diverse-people-distance-web-communication-friends-video-call-team-business-call-from-home-vector-illustration_71609-2216.jpg?size=626&ext=jpg");
+
+  }

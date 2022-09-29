@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+<!-- <p *ngFor="let alert of alerts">
+  <ngb-alert [type]="alert.type" (closed)="close(alert)" style="font-size: x-large;">{{ alert.message }}</ngb-alert>
+</p> -->
+
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="https://snacknation.com/wp-content/uploads/2021/08/online-group-games-e1630355473843.png" alt="Avatar" class="avatar1">
+      </div>
+      <div class="carousel-caption">
+       
+        <a routerLink="/discoverc" class="btn btn-danger" role="button" data-bs-toggle="button" style="font-size: 25px;">Discover clubs</a>
+        <p style="font-size: 25px; color: black;">Here you can discover new clubs</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="\assets\images\s2.jpg" alt="Avatar" class="avatar2">
+      </div>
+      <div class="carousel-caption">
+        <a routerLink="/createc" class="btn btn-success" role="button" data-bs-toggle="button" style="font-size: 30px;">Create clubs</a>
+        <p style="font-size: 25px; color: black;">Here you can  new clubs</p>
+
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="https://img.freepik.com/free-vector/video-conference-chatting-online-meeting-diverse-people-distance-web-communication-friends-video-call-team-business-call-from-home-vector-illustration_71609-2216.jpg?size=626&ext=jpg"   alt="Avatar" class="avatar3">
+      </div>
+      <div class="carousel-caption">
+        
+     
+        <a routerLink="/see-clubs" class="btn btn-dark btn-lg" role="button" data-bs-toggle="button" style="font-size: 25px;">See your clubs</a>
+        <p style="font-size: 25px; color:black;">See all your clubs here,</p>
+      </div>
+    </ng-template>
+     <!-- <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="https://api.backlinko.com/app/uploads/2021/03/telegram-usage-and-growth-statistics.webp" alt="Avatar" class="avatar4">
+      </div>
+      <div class="carousel-caption">
+        
+       
+        <a href="#" class="btn btn-success btn-lg" role="button" data-bs-toggle="button">See your one to one.</a>
+        <p style="font-size: 25px; color: black;">Meet your one through telegram.</p>
+      </div>
+    </ng-template>  -->
+  </ngb-carousel>

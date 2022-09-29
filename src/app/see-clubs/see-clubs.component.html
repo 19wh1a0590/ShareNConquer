@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<div class="row">
+<div class="card">
+<input type="submit" value="See your clubs" (click)='seeClubs()'> 
+<table class="table">
+<thead>
+    <tr>
+    <th scope="col"style="font-size:19px;">Topic</th>
+    <th scope="col"style="font-size:19px;">GroupName</th>
+    <!-- <th scope="col"style="font-size:19px;">URL</th> -->
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let u of Obj" >
+<td><h4>{{ u.topic }}</h4></td>
+<td><h4>{{ u.GroupName}}</h4></td>
+<!-- <td><h4>{{ u.link}}</h4></td> -->
+</tr>
+</tbody>
+</table>
+</div>
+</div>

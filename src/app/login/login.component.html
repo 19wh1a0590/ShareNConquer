@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="row justify-content-sm-center pt-5">
+      <div class="col-sm-10 square pb-5">
+       <div class="card" >
+        
+        <h1 class="text-center "style="font-size: 25px;color: white;">Hey ! Sign in here :) </h1>
+        <form #lForm="ngForm" (ngSubmit)="loginSubmit(lForm.value)" class="form-group" novalidate >
+          <br>   
+          <div class="form-group">
+                  <!-- <span class="input-group-addon"><I class="glyphicon glyphicon-user"></I></span> -->
+                  <label for="uname" style="font-size: 20px; color: white; width: 94px;">Email</label>
+                
+                  <input type="text" placeholder="Enter your Email" ngModel name="email" #email=ngModel 
+                    class="form-control" required>
+                  </div>
+                  <br>
+              <div class="form-group">
+               
+                  <!-- <span class="input-group-addon"><I class="glyphicon glyphicon-lock"></I></span> -->
+                  <label for="psw" style="font-size: 20px; color:white">Password</label>
+                  <input type="password" placeholder="Type your Password" ngModel name="password" #password=ngModel 
+                    class="form-control" required>
+              </div>
+            
+              <div *ngIf="email.errors?.required && email.touched" style="color:white; margin-right: 19px;">* Email invalid</div>
+              <!-- <div *ngIf="username.errors?.minlenth && username.touched"style="color:red">Enter data in Password field..</div> -->
+            
+              
+                <div *ngIf="password.errors?.required && password.touched"style="color:white;">* Password is invalid</div>
+              <!-- <div *ngIf="password.errors?.minlenth && password.touched"style="color:red">Enter data in login Id field..</div> -->
+              <br>
+              <br>
+              <!-- <br> -->
+              <button class="peachpuff" [disabled]="!lForm.valid"  style="font-size: 13px;color:black">Login</button>
+    
+              <div class="containerf">
+                <br>
+                <br>
+                <p><a routerLink="/forgotPwd" style="color: white; font-size: 15px;">Forgot Password ?</a>.</p>
+              </div>
+              <div>
+              <input type="submit" value="New User?" (click)='newUser()'> 
+              </div>
+  
+         
+           </form>
+           </div></div></div></div>
+         

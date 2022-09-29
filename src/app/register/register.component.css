@@ -1,0 +1,53 @@
+/* .form-control.ng-touched.ng-invalid {
+  border:1px solid red;
+ }
+ .form-control.ng-touched.ng-valid {
+  border:1px solid green;
+ } */
+ .row{
+  
+ position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    overflow:auto;
+    background-repeat: no-repeat;
+    background-size: 1380px 650px;
+    
+  background-blend-mode: overlay;
+  /* background-image:
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4qQixgtI6AghBIo5es88nS5fakbtysGpcGQ&usqp=CAU"),
+    linear-gradient(to bottom,  black , peachpuff);
+  background-size: cover; */
+
+  background-image: url("https://wallpaperaccess.com/full/4767780.jpg");
+  /* background-color: peachpuff; */
+
+  }
+  input[type=submit]{
+    color: peachpuff;
+  }
+
+  img.avatar {
+    /* bottom: 100px; */
+     width: 10px
+  }
+
+.form-control{
+  font-size: 13px;
+}
+.card {
+  padding: 50px 30px;
+  /* margin-top: 60px; */
+
+  /* margin-bottom: 100px 100px; */
+  width:360px;
+  border: none !important;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+  background-color: black;
+  margin-left: 280px; /* Added */
+  float: none; /* Added */
+  margin-top: 40px; /* Added */
+ 
+}

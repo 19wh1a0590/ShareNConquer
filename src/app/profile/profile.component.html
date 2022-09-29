@@ -1,0 +1,41 @@
+<div class="row">
+<app-navbar></app-navbar>
+
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  <div class="card">
+  <div class="text  mt-5">
+    <div class="col-md-12">
+      <div class="l">
+                <h4 class="text" style="font-size: 39px;color: black;"><strong>Profile</strong></h4>             
+             </div>
+             <br>
+             <br>
+             &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;
+                <label class="labels" style="font-size: 23px; color: black;">Username</label>
+                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp; <h4 style="font-size: 25px; margin-left: 59px; color: black;">{{user1.username}}</h4>
+                <!-- <div class="col-md-12"><label class="labels">Username</label><input type="text"
+                   class="form-control" placeholder="education" value="{{user1.username}}"></div> -->
+               <br>
+               <br>
+            
+                  <label class="labels" style="font-size: 20px; color:black; margin-left: 49px;">Email ID</label>
+                  <h4 style="font-size: 25px; color: black; ">{{user1.email}}</h4>
+                 
+                <br>
+                <br>
+                <br>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                  <a routerLink="/see-clubs" class="btn btn-dark" role="button" data-bs-toggle="button" style="font-size: 25px; margin-left: -20px;">Following</a>
+                
+                </div>
+  </div>

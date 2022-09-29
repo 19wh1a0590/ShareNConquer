@@ -1,0 +1,71 @@
+<div class="row">
+<app-navbar></app-navbar>
+
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+    
+        <div class="row justify-content-sm-center pt-5">
+            <div class="col-sm-10 square pb-5">
+             <div class="card">
+              <a href="https://web.telegram.org/z/" class="btn" role="button" data-bs-toggle="button" style="font-size: x-large; color:black;">Create Club</a>
+              <h1 class="text-center "style="font-size: 25px;color: black;">Fill Details😊(After creating club) </h1>
+                <form [formGroup]="exform" >
+                    <div class="form-group">
+                    <label for="cars" style="font-size:19px ; color: black;">Select Topic:</label>
+                    <select formControlName="topic" class="form-control" >
+                        <option value="ScienceAndTechnology"style="font-size: large;">ScienceAndTechnology</option>
+                        <option value="ComputerProgramming"style="font-size: large;">ComputerProgramming</option>
+                        <option value="HealthAndFitness"style="font-size: large;">HealthAndFitness</option>
+                        <option value="BusinessAndEntreprenuership"style="font-size: large;">BusinessAndEntreprenuership</option>
+                      </select>
+                      </div>
+                    <!-- <div class="form-group">
+                        <label class="col-form-label" style="font-size: 19px;color: peachpuff;">topic</label>
+                        <input formControlName="topic" type="text" class="form-control" placeholder="topic">
+                        <span *ngIf="topic.invalid && topic.touched" class="text-danger" style="font-size: 12px; color: peachpuff;">*Topic is Required</span> 
+                      </div> -->
+                      <div class="form-group">
+                        <label class="col-form-label" style="font-size: 19px;color: black;">Username</label>
+                        <input formControlName="Username" type="text" class="form-control" placeholder="Username">
+                        <span *ngIf="Username.invalid && Username.touched" class="text-danger" style="font-size: 12px; color: peachpuff;">*UserName is Required</span> 
+                      </div>
+
+                    <div class="form-group">
+                      <label class="col-form-label" style="font-size: 19px;color: black;">Group name</label>
+                      <input formControlName="GroupName" type="text" class="form-control" placeholder="GroupName">
+                      <span *ngIf="GroupName.invalid && GroupName.touched" class="text-danger" style="font-size: 12px; color: peachpuff;">*GroupName is Required</span> 
+                    </div>
+                    
+                    <div class="form-group">
+                       <label for="example" style="font-size: 19px ; color:black;">Invitation Link</label>
+                       <input type="url" formControlName="link" class="form-control" placeholder="Telegram link">
+                       <span *ngIf="link.invalid && link.touched" class="text-danger" style="font-size: 12px; color: peachpuff;">*Link is required</span>
+                    </div>
+        
+                    <button (click)="createClub()" [disabled]="exform.invalid" type="button" class="btn btn-dark" style="font-size: 13px; color: white">Submit</button>
+                    
+                 <!-- <div style="font-size: large; color: peachpuff;">Get connected feel  conected</div> -->
+               
+                 </form>
+               </div>ty
+                  
+            </div>
+        </div>
+</div>

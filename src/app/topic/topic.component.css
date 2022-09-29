@@ -1,0 +1,135 @@
+form{
+
+  background-color: peachpuff;
+    }
+  img.avatar {
+    bottom: 10px;
+     width: 5%; 
+  }
+  /* select topics*/
+  .container {
+     position : fixed; 
+    /* text-align: center;  */
+      right : 0; 
+      top :0;
+      margin-right:100px;
+      max-width: 1000px;
+      padding: 35px 220px;
+      font-size:  50px;
+      font-style: italic;
+      font-family: cursive;
+      align-items: center;
+      background-color: peachpuff;
+    /* padding: 16px; */
+  }
+  
+  /* label::before {
+    background-image: url('/assets/images/t1.png');
+  } */
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  /* input[type="radio"][id^="cb"] {
+    display: none;
+  } */
+  input[type="radio"]:checked {
+    box-shadow: 0 0 0 3px peachpuff;
+  }
+  
+  
+  label {
+    border: 1px solid #585858;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  label:before {
+    background-color: peachpuff;
+    color: black;
+    content: " ";
+    display: block;
+    border-radius: 10%;
+    border: 0px solid peachpuff;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+  }
+   
+  label img {
+    height: 175px;
+    width: 280px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+  }
+  
+  :checked + label {
+    border-color:black;
+  } */
+  
+   :checked + label:before {
+    content: " ✓ ";
+    background-color : peachpuff;
+    transform: scale(1);
+  }
+  
+  :checked + label img {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px #333;
+    z-index: -1;
+  } 
+  
+
+
+/* 
+  .card {
+    padding: 0px 0px;
+    align-items: center;
+    margin-top: 5px 100px;
+    border: 5px;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2);
+    background-color: black;
+    
+  } */
+
+  input[type="submit"]{
+    background-color: peachpuff;
+    width:1370px;
+    margin-right: 19px 19px;
+    padding: 13px 2px;
+    right:0;
+    color: black; 
+    /* margin: 50px 0px ; */
+    /* margin-bottom: 800px; */
+    /* border: none; */
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+    font-style: italic;
+ 
+   
+  }
+
+
+  .card{
+    background-color: black;
+    border-color: peachpuff;
+  }
+
+  .row{
+    background-color: peachpuff;
+  }

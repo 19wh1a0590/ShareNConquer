@@ -1,0 +1,97 @@
+/* body {
+    background: limegreen;
+} */
+
+/* .form-control:focus {
+    background: #ffdab9;
+    box-shadow: none;
+    border-color: #BA68C8;
+}
+
+.profile-button {
+    background: #ffdab9;
+    box-shadow: none;
+    border: none;
+}
+
+.profile-button:hover {
+    background: #B9DEFF;
+} */
+
+/* .profile-button:focus {
+    background: #ffdab9;
+    box-shadow: none;
+}
+
+.profile-button:active {
+    background: #ffdab9;
+    box-shadow: none;
+}
+
+.back:hover {
+    color: #B9DEFF;
+    cursor: pointer;
+}
+
+.labels {
+    font-size: 14px;
+    color:#ffffff;
+} */
+/* .rounded{
+     background-color:#000000;
+} */
+
+#upload-image {
+    float: left;
+}
+
+p {
+    margin: unset;
+}
+
+input[type=text]{
+    align-items: initial;
+}
+
+.button{
+    margin-right: 50px;
+    font-size: initial;
+    width:150px;
+    border-color:palevioletred;
+}
+
+.row{
+    background-image: url("https://i.pinimg.com/originals/01/f0/25/01f025cee4e0f2a741927f2324700310.gif");
+    background-repeat: no-repeat;
+    background-size: 1400px 700px;
+}
+
+.card{
+    /* width:500px;
+    margin-left: 430px;
+    align-items: center;
+    height: 500px;
+    margin-top: 10px;
+    background-color: lightsteelblue; */
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    box-shadow: 0 15px 25px rgba(2, 125, 241, 0.2);
+    height: 500px;
+    border-radius: 5px;
+    backdrop-filter: blur(11px);
+    background-color: rgba(11, 223, 251, 0.096);
+    padding: 10px;
+    /* text-align: center; */
+    align-items: center;
+    
+    
+}
+.l{
+    align-items: center;
+    margin-left:35px;
+}
+
+input[type=button]{
+    margin-left: 95px;
+}
